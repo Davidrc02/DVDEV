@@ -70,6 +70,16 @@ a {
   letter-spacing: -0.04em;
 }
 
+.brand-mark {
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ink);
+  background: var(--accent);
+  font-family: "DM Mono", monospace;
+}
 
 .nav {
   display: flex;

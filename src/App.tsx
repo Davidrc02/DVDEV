@@ -106,7 +106,8 @@ export default function App() {
     <div className="site-shell">
       <header className="site-header">
         <a className="brand" href="#inicio" aria-label="dvdev, inicio" onClick={closeMenu}>
-          <span>dvdev</span>
+          <span className="brand-mark">d</span>
+          <span>dvdevtech</span>
         </a>
 
         <nav className={menuOpen ? "nav nav-open" : "nav"} aria-label="Navegación principal">
@@ -309,7 +310,7 @@ export default function App() {
       <footer>
         <a className="brand footer-brand" href="#inicio">
           <span className="brand-mark">d</span>
-          <span>dvdev</span>
+          <span>dvdevtech</span>
         </a>
         <p>David Rodríguez Cano · Desarrollador web</p>
         <a href="#inicio" className="back-top">Volver arriba ↑</a>

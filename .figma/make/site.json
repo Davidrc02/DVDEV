@@ -1,5 +1,8 @@
 {
   "description": "Showcases a web developer's portfolio highlighting skills in Angular and Spring Boot to attract potential clients and employers.",
+  "icons": {
+    "icon": "/brand-mark.svg"
+  },
   "robots": {
     "index": false
   },
