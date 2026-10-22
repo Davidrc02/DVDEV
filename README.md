@@ -1,8 +1,8 @@
 # dvdev
 
-Sitio web de **David Rodríguez Cano**, desarrollador web. Presenta el perfil, los servicios y el stack (Angular, Spring Boot, TypeScript y SQL) con un diseño pensado para captar proyectos y conversaciones profesionales.
+Sitio web de **David Rodríguez Cano**, desarrollador web. Presenta su perfil, experiencia profesional, servicios y stack (Angular, React, Java/Spring Boot, bases de datos y OpenShift) con un diseño pensado para captar proyectos y conversaciones profesionales.
 
-Contacto: [hola@dvdev.es](mailto:hola@dvdev.es)
+Contacto: [davidrc3po@gmail.com](mailto:davidrc3po@gmail.com)
 
 ## Stack del proyecto
 

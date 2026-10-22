@@ -71,23 +71,50 @@ const services = [
   {
     number: "01",
     icon: "code" as const,
-    title: "Frontend con Angular",
-    text: "Interfaces rápidas, accesibles y escalables, construidas con componentes reutilizables y una experiencia de usuario cuidada.",
-    tags: ["Angular", "TypeScript", "RxJS"],
+    title: "Aplicaciones frontend",
+    text: "Desarrollo de interfaces y funcionalidades para aplicaciones de negocio con Angular y PrimeNG o React, conectadas a sus servicios backend.",
+    tags: ["Angular", "PrimeNG", "React"],
   },
   {
     number: "02",
     icon: "database" as const,
-    title: "Backend con Spring Boot",
-    text: "APIs robustas y mantenibles, diseñadas para conectar productos digitales con lógica de negocio y datos.",
-    tags: ["Java", "Spring Boot", "REST APIs"],
+    title: "Backend y APIs REST",
+    text: "Diseño y desarrollo de servicios con Java y Spring Boot, trabajando con bases de datos relacionales y optimizando consultas.",
+    tags: ["Java", "Spring Boot", "PostgreSQL", "MySQL", "Oracle"],
   },
   {
     number: "03",
     icon: "layers" as const,
-    title: "Producto end-to-end",
-    text: "Una visión completa del desarrollo para convertir requisitos complejos en soluciones simples y coherentes.",
-    tags: ["Arquitectura", "Git", "Clean code"],
+    title: "Calidad y entrega",
+    text: "Acompaño el ciclo de desarrollo con planes de pruebas, pipelines CI/CD y despliegues en OpenShift.",
+    tags: ["Pruebas", "CI/CD", "OpenShift", "Git"],
+  },
+];
+
+const experience = [
+  {
+    period: "Nov. 2025 — Actualidad",
+    company: "Atos · Proyecto JCCM",
+    role: "Desarrollador Full Stack",
+    description:
+      "Desarrollo de APIs REST y funcionalidades con Java/Spring Boot y Angular/PrimeNG. Optimización de consultas y usabilidad, participación en pipelines CI/CD y despliegues en OpenShift.",
+    tags: ["Java", "Spring Boot", "Angular", "PrimeNG", "OpenShift"],
+  },
+  {
+    period: "Abr. 2025 — Nov. 2025",
+    company: "Atos · Proyecto Correos Frío",
+    role: "Desarrollador Full Stack",
+    description:
+      "Desarrollo de evolutivos y correctivos con Spring Boot y React, trabajando con PostgreSQL y diseñando y ejecutando pruebas unitarias, de integración y funcionales.",
+    tags: ["Spring Boot", "React", "PostgreSQL", "Testing"],
+  },
+  {
+    period: "Jul. 2023 — Abr. 2025",
+    company: "Atos / Eviden",
+    role: "Consultor SOC L1",
+    description:
+      "Monitorización y gestión de incidencias de seguridad para clientes B2B, con análisis, resolución y escalado mediante ServiceNow, SMILE, Darktrace y Varonis.",
+    tags: ["Ciberseguridad", "Darktrace", "Varonis", "ServiceNow"],
   },
 ];
 
@@ -112,6 +139,7 @@ export default function App() {
 
         <nav className={menuOpen ? "nav nav-open" : "nav"} aria-label="Navegación principal">
           <a href="#sobre-mi" onClick={closeMenu}>Sobre mí</a>
+          <a href="#experiencia" onClick={closeMenu}>Experiencia</a>
           <a href="#servicios" onClick={closeMenu}>Servicios</a>
           <a href="#stack" onClick={closeMenu}>Stack</a>
           <a className="nav-cta" href="#contacto" onClick={closeMenu}>
@@ -139,11 +167,12 @@ export default function App() {
               Disponible para nuevos proyectos
             </div>
             <h1>
-              Desarrollo ideas que <em>funcionan.</em>
+              Desarrollo productos <em>de principio a fin.</em>
             </h1>
             <p className="hero-intro">
-              Hola, soy <strong>David Rodríguez Cano</strong>. Desarrollo experiencias web sólidas
-              de principio a fin, con Angular en el frontend y Spring Boot en el backend.
+              Soy <strong>David Rodríguez Cano</strong>, desarrollador Full Stack con más de 3 años
+              de experiencia en entornos tecnológicos. Construyo aplicaciones con Java, Spring Boot,
+              Angular y React, y también aporto experiencia en operaciones de ciberseguridad.
             </p>
             <div className="hero-actions">
               <a className="button button-primary" href="#contacto">
@@ -179,10 +208,10 @@ export default function App() {
                 <p className="indent-more"><span className="c-orange">'Spring Boot'</span>,</p>
                 <p className="indent-more"><span className="c-orange">'Java'</span>,</p>
                 <p className="indent-more"><span className="c-orange">'React'</span>,</p>
-                <p className="indent-more"><span className="c-orange">'Python'</span>,</p>
-                <p className="indent-more"><span className="c-orange">'DevOps'</span>,</p>
-                <p className="indent-more"><span className="c-orange">'TypeScript'</span>,</p>
-                <p className="indent-more"><span className="c-orange">'SQL'</span></p>
+                <p className="indent-more"><span className="c-orange">'PostgreSQL'</span>,</p>
+                <p className="indent-more"><span className="c-orange">'OpenShift'</span>,</p>
+                <p className="indent-more"><span className="c-orange">'CI/CD'</span>,</p>
+                <p className="indent-more"><span className="c-orange">'Ciberseguridad'</span></p>
                 <p className="indent">]</p>
                 <p>{"}"};</p>
                 <span className="cursor" />
@@ -200,28 +229,29 @@ export default function App() {
         <section className="marquee" aria-label="Tecnologías principales">
           <div className="marquee-track">
             <span>ANGULAR</span><i>✦</i><span>SPRING BOOT</span><i>✦</i>
-            <span>TYPESCRIPT</span><i>✦</i><span>JAVA</span><i>✦</i>
-            <span>SQL</span><i>✦</i><span>PYTHON</span><i>✦</i>
-            <span>CSS</span><i>✦</i><span>DEVOPS</span><i>✦</i>
+            <span>PRIMENG</span><i>✦</i><span>JAVA</span><i>✦</i>
+            <span>REACT</span><i>✦</i><span>POSTGRESQL</span><i>✦</i>
+            <span>OPENSHIFT</span><i>✦</i><span>CI/CD</span><i>✦</i>
             <span>ANGULAR</span><i>✦</i><span>SPRING BOOT</span><i>✦</i>
-            <span>TYPESCRIPT</span><i>✦</i><span>JAVA</span><i>✦</i>
-            <span>SQL</span><i>✦</i><span>PYTHON</span><i>✦</i>
-            <span>CSS</span><i>✦</i><span>DEVOPS</span><i>✦</i>
+            <span>PRIMENG</span><i>✦</i><span>JAVA</span><i>✦</i>
+            <span>REACT</span><i>✦</i><span>POSTGRESQL</span><i>✦</i>
+            <span>OPENSHIFT</span><i>✦</i><span>CI/CD</span><i>✦</i>
           </div>
         </section>
 
         <section className="about section" id="sobre-mi">
           <div className="section-label"><span>01</span> Sobre mí</div>
           <div className="about-grid">
-            <h2>Entre una gran idea y un gran producto hay <em>buen código.</em></h2>
+            <h2>Desarrollo con visión de producto y <em>criterio técnico.</em></h2>
             <div className="about-copy">
               <p>
-                Soy David, desarrollador web especializado en crear aplicaciones completas,
-                conectando interfaces intuitivas con sistemas backend fiables.
+                Mi experiencia combina desarrollo Full Stack en proyectos empresariales con una
+                etapa previa en operaciones de ciberseguridad para clientes B2B.
               </p>
               <p>
-                Me gusta entender el porqué antes de escribir el cómo. Así construyo soluciones
-                limpias, escalables y alineadas con lo que cada proyecto necesita.
+                Trabajo desde la lógica de negocio y las APIs hasta la interfaz, las pruebas y el
+                despliegue. También cuento con formación superior en Desarrollo de Aplicaciones
+                Web e inglés de nivel profesional avanzado.
               </p>
               <a className="inline-link" href="#contacto">
                 Trabajemos juntos <Icon name="arrow" />
@@ -240,9 +270,39 @@ export default function App() {
           </div>
         </section>
 
+        <section className="experience section" id="experiencia">
+          <div className="section-label"><span>02</span> Experiencia profesional</div>
+          <div className="experience-heading">
+            <h2>Software fiable, desde el <em>desarrollo hasta la operación.</em></h2>
+            <p>
+              Más de tres años en entornos tecnológicos, entre el desarrollo de aplicaciones web y
+              la monitorización y gestión de incidencias de seguridad.
+            </p>
+          </div>
+          <div className="experience-list">
+            {experience.map((item) => (
+              <article className="experience-card" key={item.period}>
+                <div className="experience-meta">
+                  <span>{item.period}</span>
+                  <span>{item.company}</span>
+                </div>
+                <h3>{item.role}</h3>
+                <p>{item.description}</p>
+                <div className="experience-tags">
+                  {item.tags.map((tag) => <span key={tag}>{tag}</span>)}
+                </div>
+              </article>
+            ))}
+          </div>
+          <p className="experience-note">
+            Grado Superior en Desarrollo de Aplicaciones Web (DAW) · Inglés: nivel profesional
+            avanzado.
+          </p>
+        </section>
+
         <section className="services section" id="servicios">
           <div className="section-heading">
-            <div className="section-label light"><span>02</span> Lo que hago</div>
+            <div className="section-label light"><span>03</span> Lo que hago</div>
             <h2>Tecnología al servicio de <em>buenas ideas.</em></h2>
           </div>
 
@@ -264,7 +324,7 @@ export default function App() {
         </section>
 
         <section className="stack section" id="stack">
-          <div className="section-label"><span>03</span> Mi stack</div>
+          <div className="section-label"><span>04</span> Mi stack</div>
           <div className="stack-layout">
             <div>
               <h2>Herramientas que convierto en <em>soluciones.</em></h2>
@@ -280,14 +340,17 @@ export default function App() {
               </article>
               <article className="stack-card">
                 <span className="stack-letter spring">S</span>
-                <div><h3>Spring Boot</h3><p>Backend · APIs · Java</p></div>
+                <div><h3>Spring Boot</h3><p>Backend · APIs REST · Java</p></div>
                 <span className="stack-arrow">↗</span>
               </article>
               <article className="stack-card compact">
-                <span>TS</span><div><h3>TypeScript</h3><p>Tipado seguro</p></div>
+                <span>DB</span><div><h3>Bases de datos</h3><p>PostgreSQL · MySQL · Oracle</p></div>
               </article>
               <article className="stack-card compact">
-                <span>DB</span><div><h3>SQL</h3><p>Datos estructurados</p></div>
+                <span>CI</span><div><h3>Entrega</h3><p>CI/CD · OpenShift · Git</p></div>
+              </article>
+              <article className="stack-card compact">
+                <span>R</span><div><h3>React</h3><p>Frontend · Correos Frío</p></div>
               </article>
             </div>
           </div>
@@ -297,9 +360,9 @@ export default function App() {
           <div className="contact-kicker"><span className="status-dot" /> ¿Tienes un proyecto en mente?</div>
           <h2>Hagamos algo <em>que importe.</em></h2>
           <p>Cuéntame qué quieres construir y veamos cómo puedo ayudarte a hacerlo realidad.</p>
-          <a className="button button-light" href="mailto:hola@dvdev.es">
+          <a className="button button-light" href="mailto:davidrc3po@gmail.com">
             <Icon name="mail" />
-            hola@dvdev.es
+            davidrc3po@gmail.com
             <Icon name="arrow" />
           </a>
           <div className="contact-orbit orbit-contact-one" />
